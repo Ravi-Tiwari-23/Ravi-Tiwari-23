@@ -1,0 +1,23 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Ravi Kumar Tiwari</title>
+  <desc id="desc">Full-Stack Developer, Backend Engineer, and Cloud Enthusiast. Turning real-world problems into practical, scalable software.</desc>
+  <defs>
+    <linearGradient id="bg" x1="36" y1="18" x2="1164" y2="342" gradientUnits="userSpaceOnUse"><stop stop-color="#050A18"/><stop offset="0.52" stop-color="#0A1733"/><stop offset="1" stop-color="#12113A"/></linearGradient>
+    <linearGradient id="accent" x1="272" y1="72" x2="915" y2="286" gradientUnits="userSpaceOnUse"><stop stop-color="#22D3EE"/><stop offset="0.52" stop-color="#60A5FA"/><stop offset="1" stop-color="#A78BFA"/></linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(866 156) rotate(154) scale(390 255)" gradientUnits="userSpaceOnUse"><stop stop-color="#2563EB" stop-opacity="0.26"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/></radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="28" fill="url(#glow)"/>
+  <g opacity="0.42" stroke="#38BDF8" stroke-width="1">
+    <path d="M0 72H190L224 106H376"/><path d="M1200 82H1040L1008 114H906"/><path d="M0 296H138L170 264H294"/><path d="M1200 284H1064L1028 248H928"/><path d="M90 0V46L122 78"/><path d="M1110 360V310L1074 274"/>
+  </g>
+  <g fill="#22D3EE"><circle cx="224" cy="106" r="4"/><circle cx="1008" cy="114" r="4"/><circle cx="170" cy="264" r="4"/><circle cx="1028" cy="248" r="4"/></g>
+  <g opacity="0.17" fill="none" stroke="url(#accent)"><circle cx="1040" cy="66" r="94"/><circle cx="1040" cy="66" r="72"/><circle cx="151" cy="318" r="106"/><circle cx="151" cy="318" r="83"/></g>
+  <path d="M348 84H852" stroke="url(#accent)" stroke-width="2" opacity="0.8"/><path d="M430 286H770" stroke="url(#accent)" stroke-width="2" opacity="0.55"/>
+  <circle cx="338" cy="84" r="4" fill="#22D3EE"/><circle cx="862" cy="84" r="4" fill="#A78BFA"/>
+  <text x="600" y="157" fill="#F8FAFC" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="55" font-weight="700" letter-spacing="1">Ravi Kumar Tiwari</text>
+  <text x="600" y="202" fill="url(#accent)" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="1.6">FULL-STACK DEVELOPER  •  BACKEND ENGINEER  •  CLOUD ENTHUSIAST</text>
+  <text x="600" y="250" fill="#CBD5E1" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="20" letter-spacing="0.25">Turning real-world problems into practical, scalable software.</text>
+  <rect x="475" y="309" width="250" height="3" rx="1.5" fill="url(#accent)" filter="url(#soft)"/><rect x="520" y="309" width="160" height="2" rx="1" fill="url(#accent)"/>
+</svg>

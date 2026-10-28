@@ -1,0 +1,15 @@
+<svg width="760" height="64" viewBox="0 0 760 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">What Ravi builds</title>
+  <desc id="desc">Full-Stack Developer, Backend Engineering, Building SaaS Products, Exploring Cloud Architecture, and Turning Ideas Into Products.</desc>
+  <defs><linearGradient id="text" x1="110" y1="0" x2="650" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#22D3EE"/><stop offset="0.5" stop-color="#60A5FA"/><stop offset="1" stop-color="#A78BFA"/></linearGradient></defs>
+  <style>
+    text { font: 600 25px 'Segoe UI', Inter, Arial, sans-serif; fill: url(#text); }
+    .role { opacity: 0; animation: cycle 15s linear infinite; }
+    .r2 { animation-delay: 3s; }.r3 { animation-delay: 6s;}.r4 { animation-delay: 9s;}.r5 { animation-delay: 12s;}
+    @keyframes cycle { 0%{opacity:0} 4%{opacity:1} 17%{opacity:1} 20%{opacity:0} 100%{opacity:0} }
+    @media (prefers-reduced-motion: reduce) { .role { animation:none; opacity:0; } .r1 { opacity:1; } }
+  </style>
+  <g text-anchor="middle">
+    <text class="role r1" x="380" y="42">Full-Stack Developer</text><text class="role r2" x="380" y="42">Backend Engineering</text><text class="role r3" x="380" y="42">Building SaaS Products</text><text class="role r4" x="380" y="42">Exploring Cloud Architecture</text><text class="role r5" x="380" y="42">Turning Ideas Into Products</text>
+  </g>
+</svg>
