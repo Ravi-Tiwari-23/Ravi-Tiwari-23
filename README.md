@@ -186,8 +186,8 @@ Top 10 team at Cosmicathon, TIET Patiala, August 2026.
 ## 🐍 My Contribution Journey
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ravi-Tiwari-23/Ravi-Tiwari-23/output/github-snake-dark.svg" />
-  <img width="100%" src="https://raw.githubusercontent.com/Ravi-Tiwari-23/Ravi-Tiwari-23/output/github-snake.svg" alt="Animated snake moving through Ravi's GitHub contribution grid" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ravi-Tiwari-23/Ravi-Tiwari-23/output/github-snake-dark.svg?v=1" />
+  <img width="100%" src="https://raw.githubusercontent.com/Ravi-Tiwari-23/Ravi-Tiwari-23/output/github-snake.svg?v=1" alt="Animated snake moving through Ravi's GitHub contribution grid" />
 </picture>
 <sub>Generated daily from my public GitHub contribution calendar.</sub>
 

@@ -114,8 +114,8 @@ links:
   github: https://github.com/Ravi-Tiwari-23
   portfolio_source: https://github.com/Ravi-Tiwari-23/personal_portfolio
   live_project: https://your-home-flame.vercel.app
-  snake_light: https://raw.githubusercontent.com/Ravi-Tiwari-23/Ravi-Tiwari-23/output/github-snake.svg
-  snake_dark: https://raw.githubusercontent.com/Ravi-Tiwari-23/Ravi-Tiwari-23/output/github-snake-dark.svg
+  snake_light: https://raw.githubusercontent.com/Ravi-Tiwari-23/Ravi-Tiwari-23/output/github-snake.svg?v=1
+  snake_dark: https://raw.githubusercontent.com/Ravi-Tiwari-23/Ravi-Tiwari-23/output/github-snake-dark.svg?v=1
 
 theme:
   primary: 60A5FA
