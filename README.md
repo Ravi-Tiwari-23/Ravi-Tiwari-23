@@ -39,6 +39,8 @@ I have worked on campus printing workflows, property technology, CRM and email a
 
 <sub>Repository, star, and fork totals come from the public GitHub API. Star and fork totals exclude the profile repository, archived repositories, and forks.</sub>
 
+- **Public commit contributions in the current GitHub contribution period:** 68
+- **Public pull-request contributions in the current GitHub contribution period:** 4
 
 ## Technical Arsenal
 
@@ -132,7 +134,10 @@ I use the tools that fit the product and problem; this curated list reflects tec
 
 ## Recently on GitHub
 
-No meaningful recent public activity is available from GitHub's public events window.
+- **Merged a pull request** — [correct the navbar and enchanced the navbar](https://github.com/PriyanshuDas0015/Your-Home/pull/5) · 19 Aug 2026
+- **Merged a pull request** — [Add Frontend/dist and update gitignore file](https://github.com/PriyanshuDas0015/Your-Home/pull/4) · 19 Aug 2026
+- **Merged a pull request** — [Add frontend application](https://github.com/PriyanshuDas0015/Your-Home/pull/3) · 19 Aug 2026
+- **Merged a pull request** — [add frontend file to your home](https://github.com/PriyanshuDas0015/Your-Home/pull/2) · 19 Aug 2026
 
 <sub>GitHub's public-events API has a limited retention window. Repetitive pushes are deduplicated, and profile-automation commits are excluded.</sub>
 
@@ -180,7 +185,11 @@ Top 10 team at Cosmicathon, TIET Patiala, August 2026.
 
 ## 🐍 My Contribution Journey
 
-<sub>The contribution animation is generated automatically and will appear here after its first successful publication.</sub>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ravi-Tiwari-23/Ravi-Tiwari-23/output/github-snake-dark.svg" />
+  <img width="100%" src="https://raw.githubusercontent.com/Ravi-Tiwari-23/Ravi-Tiwari-23/output/github-snake.svg" alt="Animated snake moving through Ravi's GitHub contribution grid" />
+</picture>
+<sub>Generated daily from my public GitHub contribution calendar.</sub>
 
 ## Developer Philosophy
 
