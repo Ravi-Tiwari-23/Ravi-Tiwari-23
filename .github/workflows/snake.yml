@@ -1,40 +1,44 @@
-name: Update contribution graphics
+name: Generate contribution snake
 
 on:
   schedule:
     - cron: "23 3 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/snake.yml"
 
 permissions:
   contents: write
 
 concurrency:
-  group: update-contribution-graphics
+  group: contribution-snake
   cancel-in-progress: true
 
 jobs:
   generate:
-    name: Generate and publish SVG assets
+    name: Generate and publish animated SVGs
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
     steps:
       - name: Generate light and dark contribution snakes
-        uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
         with:
           github_user_name: ${{ github.repository_owner }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           outputs: |
-            dist/github-contribution-grid-snake.svg?palette=github-light&color_snake=#2563EB
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#22D3EE
+            dist/github-snake.svg?palette=github-light&color_snake=#7C3AED&color_dots=#EBEDF0,#9BE9A8,#40C463,#30A14E,#216E39
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#22D3EE&color_dots=#161B22,#0E4429,#006D32,#26A641,#39D353
 
       - name: Validate generated SVG assets
         shell: bash
         run: |
-          test -s dist/github-contribution-grid-snake.svg
-          test -s dist/github-contribution-grid-snake-dark.svg
-          grep -q '<svg' dist/github-contribution-grid-snake.svg
-          grep -q '<svg' dist/github-contribution-grid-snake-dark.svg
+          test -s dist/github-snake.svg
+          test -s dist/github-snake-dark.svg
+          grep -q '<svg' dist/github-snake.svg
+          grep -q '<svg' dist/github-snake-dark.svg
 
       - name: Publish generated assets to the output branch
         uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865 # v4
@@ -43,6 +47,6 @@ jobs:
           target_branch: output
           keep_history: false
           jekyll: false
-          commit_message: "chore: update contribution graphics"
+          commit_message: "chore: update contribution snake"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

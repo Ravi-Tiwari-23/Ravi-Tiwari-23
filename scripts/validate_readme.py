@@ -15,6 +15,7 @@ REQUIRED_HEADINGS = (
     "## Recently on GitHub",
     "## Experience & Recognition",
     "## GitHub Engineering Activity",
+    "## 🐍 My Contribution Journey",
     "## Developer Philosophy",
 )
 

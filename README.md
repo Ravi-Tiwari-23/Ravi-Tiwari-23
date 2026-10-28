@@ -178,6 +178,9 @@ Top 10 team at Cosmicathon, TIET Patiala, August 2026.
   </picture>
 </div>
 
+## 🐍 My Contribution Journey
+
+<sub>The contribution animation is generated automatically and will appear here after its first successful publication.</sub>
 
 ## Developer Philosophy
 

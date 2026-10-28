@@ -115,13 +115,14 @@ def test_unchanged_generation_does_not_rewrite_file(tmp_path):
 
 def test_missing_graphics_are_not_referenced():
     rendered = render_profile(ROOT / "templates/profile.md.j2", config(), data())
-    assert "output/github-contribution-grid-snake" not in rendered
+    assert "output/github-snake" not in rendered
+    assert "## 🐍 My Contribution Journey" in rendered
 
 
 def test_available_graphics_render_light_and_dark_sources():
     rendered = render_profile(ROOT / "templates/profile.md.j2", config(), data(snake=True))
-    assert "github-contribution-grid-snake.svg" in rendered
-    assert "github-contribution-grid-snake-dark.svg" in rendered
+    assert "github-snake.svg" in rendered
+    assert "github-snake-dark.svg" in rendered
 
 
 def test_profile_supports_light_and_dark_theme_sources():
