@@ -1,0 +1,196 @@
+<div align="center">
+  <img src="./assets/profile-banner.svg" width="100%" alt="{{ profile.name }} — {{ profile.headline }}" />
+  <br />
+  <img src="./assets/typing-roles.svg" width="640" alt="Full-Stack Developer; Backend Engineering; Building SaaS Products; Exploring Cloud Architecture; Turning Ideas Into Products" />
+  <br />
+  <sub>Python & Django · React & Next.js · PostgreSQL · REST APIs · AWS</sub>
+  <br /><br />
+  <a href="mailto:{{ profile.email }}"><img alt="Email Ravi" src="https://img.shields.io/badge/Email-0B1220?style=flat-square&amp;logo=gmail&amp;logoColor={{ theme.cyan }}" /></a>
+  <a href="{{ links.github }}"><img alt="Ravi's GitHub profile" src="https://img.shields.io/badge/GitHub-0B1220?style=flat-square&amp;logo=github&amp;logoColor={{ theme.primary }}" /></a>
+{% if github.verified_urls.live_project %}
+  <a href="{{ links.live_project }}"><img alt="View the GenVilla real-estate application" src="https://img.shields.io/badge/Live_Project-0B1220?style=flat-square&amp;logo=vercel&amp;logoColor={{ theme.violet }}" /></a>
+{% endif %}
+</div>
+
+## About Me
+
+{% for paragraph in about %}
+{{ paragraph }}
+
+{% endfor %}
+> **In short:** I build practical products with a backend-first mindset and an eye toward reliable cloud delivery.
+
+### Quick Facts
+
+- 🎓 **Education:** {{ profile.education }}
+- 💼 **Experience:** {{ profile.experience }}
+- ☁️ **Cloud learning:** AWS Academy Graduate — Cloud Foundations
+- 🧭 **Interests:** full-stack development, backend engineering, cloud, SaaS, and practical AI integration
+- 🤝 **Collaboration:** open to meaningful development, open-source, and startup opportunities
+- 🗣️ **Languages:** {{ profile.languages_spoken | join(' and ') }}
+
+<img src="./assets/section-divider.svg" width="100%" alt="" />
+
+## GitHub Snapshot
+
+<div align="center">
+  <img alt="{{ github.stats.public_repositories }} public repositories" src="https://img.shields.io/badge/Public_repositories-{{ github.stats.public_repositories }}-0B1220?style=for-the-badge&amp;labelColor=0B1220&amp;color=2563EB" />
+  <img alt="{{ github.stats.total_stars }} stars across eligible repositories" src="https://img.shields.io/badge/Eligible_repo_stars-{{ github.stats.total_stars }}-0B1220?style=for-the-badge&amp;labelColor=0B1220&amp;color=0891B2" />
+  <img alt="{{ github.stats.total_forks }} forks across eligible repositories" src="https://img.shields.io/badge/Eligible_repo_forks-{{ github.stats.total_forks }}-0B1220?style=for-the-badge&amp;labelColor=0B1220&amp;color=7C3AED" />
+</div>
+
+<sub>Repository, star, and fork totals come from the public GitHub API. Star and fork totals exclude the profile repository, archived repositories, and forks.</sub>
+
+{% if github.stats.public_commit_contributions is not none %}
+- **Public commit contributions in the current GitHub contribution period:** {{ github.stats.public_commit_contributions }}
+- **Public pull-request contributions in the current GitHub contribution period:** {{ github.stats.public_pull_request_contributions }}
+{% endif %}
+
+## Technical Arsenal
+
+I use the tools that fit the product and problem; this curated list reflects technologies I have worked with or am actively developing with.
+
+| Area | Technologies |
+|---|---|
+| **Programming** | {{ skills.programming | join(' · ') }} |
+| **Frontend** | {{ skills.frontend | join(' · ') }} |
+| **Backend** | {{ skills.backend | join(' · ') }} |
+| **Data** | {{ skills.data | join(' · ') }} |
+| **Cloud & delivery** | {{ skills.cloud_delivery | join(' · ') }} |
+| **Developer tools** | {{ skills.tools | join(' · ') }} |
+| **Additional experience** | {{ skills.additional | join(' · ') }} |
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,js,ts,c,cpp" height="42" alt="Python, JavaScript, TypeScript, C, and C++" />
+  &nbsp;
+  <img src="https://skillicons.dev/icons?i=react,nextjs,html,css,tailwind,bootstrap" height="42" alt="React, Next.js, HTML, CSS, Tailwind CSS, and Bootstrap" />
+  &nbsp;
+  <img src="https://skillicons.dev/icons?i=django,flask,fastapi,nodejs,postgres,mysql,mongodb,sqlite" height="42" alt="Django, Flask, FastAPI, Node.js, PostgreSQL, MySQL, MongoDB, and SQLite" />
+  &nbsp;
+  <img src="https://skillicons.dev/icons?i=aws,cloudflare,vercel,nginx,docker,git,github,linux" height="42" alt="AWS, Cloudflare, Vercel, Nginx, Docker, Git, GitHub, and Linux" />
+</p>
+
+### Languages Used Across My Public Repositories
+
+{% if github.languages %}
+| Language | Share of detected repository code |
+|---|---:|
+{% for language in github.languages %}
+| {{ language.name | md }} | {{ language.percentage }}% |
+{% endfor %}
+{% else %}
+No public repository language data is currently available.
+{% endif %}
+
+<sub>GitHub language usage describes repository composition, not proficiency or mastery.</sub>
+
+<img src="./assets/section-divider.svg" width="100%" alt="" />
+
+## Featured Projects — From Ideas to Working Systems
+
+{% if featured %}
+{% for project in featured %}
+### [{{ project.display_title | md }}]({{ project.url }}) · {{ project.category | md }}
+
+**{{ project.short_description | md }}**
+
+{% if project.tech_stack %}**Stack:** {{ project.tech_stack | map('code') | join(' ') }}{% endif %}
+
+<br />
+**GitHub metadata:** {{ project.primary_language | md }} · ★ {{ project.stars }} · Forks {{ project.forks }} · Last activity {{ project.pushed_at | date }}{% if project.status %} · **Curated status:** {{ project.status | md }}{% endif %}
+
+<br />
+[Repository]({{ project.url }}){% if project.demo_url %} · [Verified live demo]({{ project.demo_url }}){% endif %}
+
+{% endfor %}
+{% else %}
+No eligible public repositories are currently available. Curated product work is listed below.
+{% endif %}
+
+<details>
+<summary><strong>More product work</strong></summary>
+
+<br />
+
+{% for project in additional_projects %}
+- **{{ project.name | md }} — {{ project.category | md }}:** {{ project.description | md }} {{ project.stack | map('code') | join(' ') }} · **{{ project.note | md }}**
+{% endfor %}
+
+</details>
+
+## Recently on GitHub
+
+{% if github.activities %}
+{% for activity in github.activities %}
+- **{{ activity.action | md }}** — [{{ activity.detail | md }}]({{ activity.url }}) · {{ activity.date | date }}
+{% endfor %}
+{% else %}
+No meaningful recent public activity is available from GitHub's public events window.
+{% endif %}
+
+<sub>GitHub's public-events API has a limited retention window. Repetitive pushes are deduplicated, and profile-automation commits are excluded.</sub>
+
+<img src="./assets/section-divider.svg" width="100%" alt="" />
+
+## Experience & Recognition
+
+### Backend Developer Intern · GenVilla
+
+Contributed to practical product requirements across application and API development, data and backend workflows, feature delivery, debugging, and collaboration. The experience strengthened my understanding of building software inside an evolving real-world product rather than as an isolated technical exercise.
+
+{% for achievement in achievements %}
+### {{ achievement.title }}
+
+{{ achievement.description }}
+
+{% endfor %}
+## What I'm Building & Learning
+
+- Production-ready backend services with cleaner APIs and data models
+- Better system design, testing strategy, and application security
+- AWS deployment patterns and maintainable cloud infrastructure
+- Practical AI integrations that improve a product instead of adding novelty
+- Scalable SaaS workflows, observability, and dependable delivery
+
+## GitHub Engineering Activity
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username={{ profile.username }}&amp;show_icons=true&amp;hide_border=true&amp;rank_icon=github&amp;title_color={{ theme.primary }}&amp;icon_color={{ theme.cyan }}&amp;text_color={{ theme.dark_text }}&amp;bg_color=00000000" />
+    <img height="170" src="https://github-readme-stats.vercel.app/api?username={{ profile.username }}&amp;show_icons=true&amp;hide_border=true&amp;rank_icon=github&amp;title_color=2563EB&amp;icon_color=0891B2&amp;text_color={{ theme.light_text }}&amp;bg_color=00000000" alt="Ravi's GitHub overview" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username={{ profile.username }}&amp;layout=compact&amp;hide_border=true&amp;langs_count=8&amp;title_color={{ theme.primary }}&amp;text_color={{ theme.dark_text }}&amp;bg_color=00000000" />
+    <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username={{ profile.username }}&amp;layout=compact&amp;hide_border=true&amp;langs_count=8&amp;title_color=2563EB&amp;text_color={{ theme.light_text }}&amp;bg_color=00000000" alt="Most-used languages across Ravi's public repositories" />
+  </picture>
+  <br />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user={{ profile.username }}&amp;hide_border=true&amp;background=00000000&amp;ring={{ theme.cyan }}&amp;fire={{ theme.violet }}&amp;currStreakLabel={{ theme.primary }}&amp;sideLabels={{ theme.dark_text }}&amp;dates=94A3B8&amp;sideNums=E2E8F0&amp;currStreakNum=E2E8F0" />
+    <img width="520" src="https://streak-stats.demolab.com?user={{ profile.username }}&amp;hide_border=true&amp;background=00000000&amp;ring=0891B2&amp;fire=7C3AED&amp;currStreakLabel=2563EB&amp;sideLabels={{ theme.light_text }}&amp;dates=64748B&amp;sideNums=0F172A&amp;currStreakNum=0F172A" alt="Ravi's GitHub contribution streak" />
+  </picture>
+</div>
+
+{% if snake_available %}
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="{{ links.snake_dark }}" />
+  <img width="100%" src="{{ links.snake_light }}" alt="Animated GitHub contribution grid" />
+</picture>
+{% endif %}
+
+## Developer Philosophy
+
+> Good software earns its complexity. The goal is not to use the most technologies—it is to solve a real problem clearly, reliably, and in a way the next developer can maintain.
+
+## Let's Build Something Useful
+
+I'm interested in backend, full-stack, cloud, SaaS, and early-stage product opportunities where thoughtful engineering can make a measurable difference.
+
+<p align="center">
+  <a href="mailto:{{ profile.email }}"><strong>Email me</strong></a>
+  &nbsp;·&nbsp;
+  <a href="{{ links.github }}"><strong>Explore my GitHub</strong></a>
+  &nbsp;·&nbsp;
+  <a href="{{ links.portfolio_source }}"><strong>View portfolio source</strong></a>
+</p>
+
+<p align="center"><sub>Thanks for visiting. If a project here connects with what you're building, I'd be glad to talk.</sub></p>

@@ -1,0 +1,130 @@
+profile:
+  username: Ravi-Tiwari-23
+  name: Ravi Kumar Tiwari
+  headline: Full-Stack Developer | Backend Engineer | AWS & Cloud Enthusiast
+  email: ravi.tiwari2303@gmail.com
+  education: B.Tech in Computer Science and Engineering, SRM University Delhi-NCR, Sonipat (2023–2027)
+  experience: Backend Developer Intern at GenVilla
+  languages_spoken:
+    - English
+    - Hindi
+
+about:
+  - >-
+    I'm a Computer Science Engineering student at SRM University Delhi-NCR,
+    Sonipat, and a developer who enjoys taking products from an initial idea to
+    a working system. My practical experience spans full-stack applications,
+    backend services, database integration, authentication, and web deployment.
+  - >-
+    I have worked on campus printing workflows, property technology, CRM and
+    email automation, e-commerce, satellite-imagery analysis, content systems,
+    and cloud-hosted applications. I care about building software that is useful,
+    secure, maintainable, and clear enough for a team to keep improving.
+
+skills:
+  programming: [Python, JavaScript, TypeScript, C, C++, SQL]
+  frontend: [React, Next.js, HTML5, CSS3, Tailwind CSS, Bootstrap]
+  backend: [Django, Django REST Framework, Flask, FastAPI, Node.js, REST APIs]
+  data: [PostgreSQL, MySQL, MongoDB, SQLite, PostGIS]
+  cloud_delivery: [AWS, EC2, Cloudflare, Render, Vercel, Nginx, Gunicorn]
+  tools: [Git, GitHub, VS Code, Linux, Docker]
+  additional: [Cloudinary, Google Earth Engine, IBM SPSS]
+
+achievements:
+  - title: AWS Academy Graduate — Cloud Foundations
+    description: Foundational study in AWS cloud concepts, services, security, architecture, pricing, and support.
+  - title: Cosmicathon Hackathon — Top 10 Team
+    description: Top 10 team at Cosmicathon, TIET Patiala, August 2026.
+
+featured_projects:
+  mode: hybrid
+  maximum: 4
+  projects:
+    - repository: Book-formatter
+      repository_id: 1414693563
+      priority: 100
+      display_title: Bookloom
+      category: Document Engineering
+      short_description: A local, source-faithful PDF-to-book production workspace with approval and quality gates.
+      status: Active development
+      tech_stack:
+        [Python, Streamlit, PyMuPDF, Tesseract OCR, WeasyPrint, pypdf, pytest]
+    - repository: estate_v2
+      repository_id: 1346458827
+      priority: 95
+      display_title: GenVilla / Your Home
+      category: PropTech
+      short_description: Property exploration and financial decision support for home buyers.
+      status: Product development
+      demo_url: https://your-home-flame.vercel.app
+      tech_stack:
+        [Next.js, React, JavaScript, Tailwind CSS, React Query, Recharts]
+    - repository: personal_portfolio
+      repository_id: 1359403365
+      priority: 90
+      display_title: Portfolio & Project CMS
+      category: Full-Stack Application
+      short_description: A production-oriented portfolio with a focused private administration layer.
+      status: Active development
+      tech_stack:
+        [Flask, SQLAlchemy, PostgreSQL, Cloudinary, Gunicorn, Docker, pytest]
+    - repository: ZaraTech-blog_page
+      repository_id: 1318783173
+      priority: 85
+      display_title: Zara It
+      category: Content Platform
+      short_description: A role-aware Django publishing application for posts, categories, comments, search, and users.
+      status: Active development
+      tech_stack: [Django, Python, Bootstrap, SQLite, Pillow]
+
+additional_projects:
+  - name: Printeze
+    category: Campus Printing SaaS
+    description: QR-based uploads, anonymous submissions, shop dashboards, print-job workflows, reporting, and privacy-conscious document handling.
+    stack: [Django, PostgreSQL, AWS EC2, Gunicorn, Nginx]
+    note: Repository not publicly listed
+  - name: Connectra
+    category: CRM & Email Automation
+    description: Multi-workspace outreach with roles, campaigns, backend APIs, queue architecture, and Gmail OAuth integration work.
+    stack: [Next.js, Django REST Framework, PostgreSQL, Gmail API]
+    note: In development; repository not publicly listed
+  - name: Falcon Eye
+    category: Geospatial Analytics
+    description: Area-of-interest management and satellite analysis using vegetation, water, and land-cover indices.
+    stack: [Next.js, Node.js, PostgreSQL, PostGIS, Google Earth Engine]
+    note: Repository not publicly listed
+  - name: Printezy.shop
+    category: Custom Merchandise
+    description: An e-commerce product covering catalog, storefront, customization, seller, cart, wishlist, order, and administrative workflows.
+    stack: [Next.js, TypeScript, FastAPI, PostgreSQL, Tailwind CSS]
+    note: In development; repository not publicly listed
+
+repository_rules:
+  exclude_profile_repository: true
+  exclude_archived: true
+  exclude_forks: true
+  include: []
+  exclude: []
+
+activity:
+  maximum: 5
+  exclude_repositories: [Ravi-Tiwari-23]
+
+links:
+  github: https://github.com/Ravi-Tiwari-23
+  portfolio_source: https://github.com/Ravi-Tiwari-23/personal_portfolio
+  live_project: https://your-home-flame.vercel.app
+  snake_light: https://raw.githubusercontent.com/Ravi-Tiwari-23/Ravi-Tiwari-23/output/github-contribution-grid-snake.svg
+  snake_dark: https://raw.githubusercontent.com/Ravi-Tiwari-23/Ravi-Tiwari-23/output/github-contribution-grid-snake-dark.svg
+
+theme:
+  primary: 60A5FA
+  cyan: 22D3EE
+  violet: A78BFA
+  dark_text: CBD5E1
+  light_text: 334155
+
+update:
+  verify_external_urls: true
+  api_timeout_seconds: 20
+  api_retries: 3
