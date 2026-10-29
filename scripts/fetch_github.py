@@ -6,26 +6,36 @@ import os
 import random
 import re
 import time
-from datetime import UTC, datetime
+from datetime import UTC, datetime, time as datetime_time, timedelta
 from pathlib import Path
 from typing import Any, Callable, Iterable
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urlparse
 from urllib.request import Request, urlopen
+from zoneinfo import ZoneInfo
 
 import yaml
 
 
 RETRIABLE_STATUS_CODES = {429, 500, 502, 503, 504}
 GRAPHQL_QUERY = """
-query ProfileSummary($login: String!) {
+query ProfileSummary($login: String!, $from: DateTime!, $to: DateTime!) {
   user(login: $login) {
-    contributionsCollection {
+    contributionsCollection(from: $from, to: $to) {
       totalCommitContributions
       totalIssueContributions
       totalPullRequestContributions
       totalPullRequestReviewContributions
       restrictedContributionsCount
+      contributionCalendar {
+        totalContributions
+        weeks {
+          contributionDays {
+            contributionCount
+            date
+          }
+        }
+      }
     }
     pullRequests(first: 5, orderBy: {field: CREATED_AT, direction: DESC}) {
       nodes {
@@ -341,6 +351,14 @@ def collect_profile_data(
     url_probe: Callable[[str], bool] | None = None,
 ) -> dict[str, Any]:
     username = config["profile"]["username"]
+    statistics_config = config.get("statistics", {})
+    reporting_timezone = str(statistics_config.get("timezone", "Asia/Kolkata"))
+    period_days = max(1, int(statistics_config.get("period_days", 365)))
+    zone = ZoneInfo(reporting_timezone)
+    period_end = datetime.now(zone).date()
+    period_start = period_end - timedelta(days=period_days - 1)
+    from_value = datetime.combine(period_start, datetime_time.min, zone).astimezone(UTC).isoformat()
+    to_value = datetime.combine(period_end, datetime_time.max, zone).astimezone(UTC).isoformat()
     user, _ = client.request_json(f"/users/{username}")
     raw_repos = client.paginate(
         f"/users/{username}/repos?{urlencode({'per_page': 100, 'type': 'owner', 'sort': 'updated'})}"
@@ -362,7 +380,10 @@ def collect_profile_data(
 
     graphql: dict[str, Any] = {}
     if client.token:
-        graphql = client.graphql(GRAPHQL_QUERY, {"login": username}).get("user") or {}
+        graphql = client.graphql(
+            GRAPHQL_QUERY,
+            {"login": username, "from": from_value, "to": to_value},
+        ).get("user") or {}
 
     verified_urls: dict[str, bool] = {}
     if config.get("update", {}).get("verify_external_urls", True):
@@ -381,6 +402,16 @@ def collect_profile_data(
         verified_urls = {key: checker(url) for key, url in candidates.items()}
 
     contribution_data = (graphql.get("contributionsCollection") or {}) if graphql else {}
+    calendar = contribution_data.get("contributionCalendar") or {}
+    contribution_days = [
+        {
+            "date": day.get("date", ""),
+            "count": int(day.get("contributionCount") or 0),
+        }
+        for week in calendar.get("weeks", [])
+        for day in week.get("contributionDays", [])
+        if period_start.isoformat() <= str(day.get("date", "")) <= period_end.isoformat()
+    ]
     public_pull_requests = [
         pull
         for pull in ((graphql.get("pullRequests") or {}).get("nodes", []) if graphql else [])
@@ -398,6 +429,10 @@ def collect_profile_data(
         "total_forks": sum(repo["forks"] for repo in eligible),
         "public_commit_contributions": contribution_data.get("totalCommitContributions"),
         "public_pull_request_contributions": contribution_data.get("totalPullRequestContributions"),
+        "visible_contributions": calendar.get("totalContributions"),
+        "restricted_contributions": contribution_data.get("restrictedContributionsCount"),
+        "issue_contributions": contribution_data.get("totalIssueContributions"),
+        "review_contributions": contribution_data.get("totalPullRequestReviewContributions"),
     }
 
     return {
@@ -410,6 +445,13 @@ def collect_profile_data(
         "repositories": repositories,
         "eligible_repositories": eligible,
         "stats": stats,
+        "reporting_period": {
+            "start": period_start.isoformat(),
+            "end": period_end.isoformat(),
+            "days": period_days,
+            "timezone": reporting_timezone,
+        },
+        "contribution_calendar": contribution_days,
         "languages": aggregate_languages(eligible),
         "activities": activities,
         "recent_pull_requests": public_pull_requests,

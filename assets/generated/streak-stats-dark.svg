@@ -1,0 +1,16 @@
+<svg width="520" height="185" viewBox="0 0 520 185" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Contribution streak statistics</title>
+  <desc id="desc">Visible contribution total, current streak, and longest streak within the rolling reporting period.</desc>
+  <rect x="0.5" y="0.5" width="519" height="184" rx="12" fill="#0B1220" stroke="#24324A"/>
+  <style>text{font-family:'Segoe UI',Inter,Arial,sans-serif}.label{font-size:13px;fill:#94A3B8}.value{font-size:20px;font-weight:700;fill:#E2E8F0}.heading{font-size:17px;font-weight:700;fill:#60A5FA}.foot{font-size:11px;fill:#94A3B8}</style>
+  <text class="heading" x="260" y="32" text-anchor="middle">Contribution Consistency</text>
+  <text x="87" y="96" text-anchor="middle" font-size="34" font-weight="700" fill="#22D3EE">144</text>
+  <text class="label" x="87" y="122" text-anchor="middle">Visible Contributions</text>
+  <path d="M173 58V132" stroke="#24324A"/>
+  <text x="260" y="96" text-anchor="middle" font-size="34" font-weight="700" fill="#A78BFA">1</text>
+  <text class="label" x="260" y="122" text-anchor="middle">Current Streak</text>
+  <path d="M346 58V132" stroke="#24324A"/>
+  <text x="433" y="96" text-anchor="middle" font-size="34" font-weight="700" fill="#60A5FA">6</text>
+  <text class="label" x="433" y="122" text-anchor="middle">Longest Streak</text>
+  <text class="foot" x="260" y="171" text-anchor="middle">GitHub-visible calendar · rolling 365 days · through 2026-10-29 (Asia/Kolkata)</text>
+</svg>

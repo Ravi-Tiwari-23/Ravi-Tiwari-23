@@ -1,0 +1,16 @@
+<svg width="490" height="200" viewBox="0 0 490 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub activity statistics</title>
+  <desc id="desc">Public repository totals and eligible GitHub contribution metrics for the selected reporting period.</desc>
+  <rect x="0.5" y="0.5" width="489" height="199" rx="12" fill="#FFFFFF" stroke="#D8DEE4"/>
+  <style>text{font-family:'Segoe UI',Inter,Arial,sans-serif}.label{font-size:13px;fill:#64748B}.value{font-size:20px;font-weight:700;fill:#0F172A}.heading{font-size:17px;font-weight:700;fill:#2563EB}.foot{font-size:11px;fill:#64748B}</style>
+  <text class="heading" x="24" y="32">GitHub Activity</text>
+  <text class="label" x="24" y="64">Public repositories</text>
+  <text class="value" x="466" y="64" text-anchor="end">8</text>
+  <text class="label" x="24" y="92">Eligible commit contributions</text>
+  <text class="value" x="466" y="92" text-anchor="end">69</text>
+  <text class="label" x="24" y="120">Pull-request contributions</text>
+  <text class="value" x="466" y="120" text-anchor="end">4</text>
+  <text class="label" x="24" y="148">Stars / forks on eligible public repos</text>
+  <text class="value" x="466" y="148" text-anchor="end">1 / 3</text>
+  <text class="foot" x="24" y="184">Contribution metrics: 2025-10-30 to 2026-10-29 · Asia/Kolkata</text>
+</svg>

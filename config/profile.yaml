@@ -110,6 +110,10 @@ activity:
   maximum: 5
   exclude_repositories: [Ravi-Tiwari-23]
 
+statistics:
+  timezone: Asia/Kolkata
+  period_days: 365
+
 links:
   github: https://github.com/Ravi-Tiwari-23
   portfolio_source: https://github.com/Ravi-Tiwari-23/personal_portfolio

@@ -128,7 +128,11 @@ def test_available_graphics_render_light_and_dark_sources():
 def test_profile_supports_light_and_dark_theme_sources():
     rendered = render_profile(ROOT / "templates/profile.md.j2", config(), data())
     assert rendered.count('media="(prefers-color-scheme: dark)"') >= 3
-    assert "title_color=2563EB" in rendered
+    assert "./assets/generated/github-stats-dark.svg" in rendered
+    assert "./assets/generated/language-stats.svg" in rendered
+    assert "./assets/generated/streak-stats-dark.svg" in rendered
+    assert "github-readme-stats.vercel.app" not in rendered
+    assert "streak-stats.demolab.com" not in rendered
 
 
 def test_generated_profile_passes_validation():

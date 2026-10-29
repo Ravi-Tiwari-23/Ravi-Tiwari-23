@@ -39,8 +39,8 @@ I have worked on campus printing workflows, property technology, CRM and email a
 
 <sub>Repository, star, and fork totals come from the public GitHub API. Star and fork totals exclude the profile repository, archived repositories, and forks.</sub>
 
-- **Public commit contributions in the current GitHub contribution period:** 69
-- **Public pull-request contributions in the current GitHub contribution period:** 4
+- **Eligible commit contributions (2025-10-30 to 2026-10-29):** 69
+- **Pull-request contributions (2025-10-30 to 2026-10-29):** 4
 
 ## Technical Arsenal
 
@@ -134,10 +134,7 @@ I use the tools that fit the product and problem; this curated list reflects tec
 
 ## Recently on GitHub
 
-- **Merged a pull request** — [correct the navbar and enchanced the navbar](https://github.com/PriyanshuDas0015/Your-Home/pull/5) · 19 Aug 2026
-- **Merged a pull request** — [Add Frontend/dist and update gitignore file](https://github.com/PriyanshuDas0015/Your-Home/pull/4) · 19 Aug 2026
-- **Merged a pull request** — [Add frontend application](https://github.com/PriyanshuDas0015/Your-Home/pull/3) · 19 Aug 2026
-- **Merged a pull request** — [add frontend file to your home](https://github.com/PriyanshuDas0015/Your-Home/pull/2) · 19 Aug 2026
+No meaningful recent public activity is available from GitHub's public events window.
 
 <sub>GitHub's public-events API has a limited retention window. Repetitive pushes are deduplicated, and profile-automation commits are excluded.</sub>
 
@@ -169,19 +166,21 @@ Top 10 team at Cosmicathon, TIET Patiala, August 2026.
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Ravi-Tiwari-23&amp;show_icons=true&amp;hide_border=true&amp;rank_icon=github&amp;title_color=60A5FA&amp;icon_color=22D3EE&amp;text_color=CBD5E1&amp;bg_color=00000000" />
-    <img height="170" src="https://github-readme-stats.vercel.app/api?username=Ravi-Tiwari-23&amp;show_icons=true&amp;hide_border=true&amp;rank_icon=github&amp;title_color=2563EB&amp;icon_color=0891B2&amp;text_color=334155&amp;bg_color=00000000" alt="Ravi's GitHub overview" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/github-stats-dark.svg" />
+    <img height="200" src="./assets/generated/github-stats.svg" alt="Ravi's public GitHub activity and contribution totals" />
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Ravi-Tiwari-23&amp;layout=compact&amp;hide_border=true&amp;langs_count=8&amp;title_color=60A5FA&amp;text_color=CBD5E1&amp;bg_color=00000000" />
-    <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ravi-Tiwari-23&amp;layout=compact&amp;hide_border=true&amp;langs_count=8&amp;title_color=2563EB&amp;text_color=334155&amp;bg_color=00000000" alt="Most-used languages across Ravi's public repositories" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/language-stats-dark.svg" />
+    <img height="200" src="./assets/generated/language-stats.svg" alt="Language distribution across Ravi's eligible public repositories" />
   </picture>
   <br />
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=Ravi-Tiwari-23&amp;hide_border=true&amp;background=00000000&amp;ring=22D3EE&amp;fire=A78BFA&amp;currStreakLabel=60A5FA&amp;sideLabels=CBD5E1&amp;dates=94A3B8&amp;sideNums=E2E8F0&amp;currStreakNum=E2E8F0" />
-    <img width="520" src="https://streak-stats.demolab.com?user=Ravi-Tiwari-23&amp;hide_border=true&amp;background=00000000&amp;ring=0891B2&amp;fire=7C3AED&amp;currStreakLabel=2563EB&amp;sideLabels=334155&amp;dates=64748B&amp;sideNums=0F172A&amp;currStreakNum=0F172A" alt="Ravi's GitHub contribution streak" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/streak-stats-dark.svg" />
+    <img width="520" src="./assets/generated/streak-stats.svg" alt="Ravi's visible GitHub contributions, current streak, and longest streak" />
   </picture>
 </div>
+
+<sub>Repository and language data cover eligible public repositories. Contribution and streak values use the GitHub-visible contribution calendar for the rolling 365-day period ending 2026-10-29 in Asia/Kolkata. Eligible commit contributions follow GitHub's contribution rules; they are not an all-repository lifetime commit count.</sub>
 
 ## 🐍 My Contribution Journey
 

@@ -127,9 +127,22 @@ def build_context(config: dict[str, Any], data: dict[str, Any]) -> dict[str, Any
         "total_forks": 0,
         "public_commit_contributions": None,
         "public_pull_request_contributions": None,
+        "visible_contributions": None,
+        "restricted_contributions": None,
+        "issue_contributions": None,
+        "review_contributions": None,
     }.items():
         stats.setdefault(key, default)
     github["stats"] = stats
+    github.setdefault(
+        "reporting_period",
+        {
+            "start": "Unavailable",
+            "end": "Unavailable",
+            "days": config.get("statistics", {}).get("period_days", 365),
+            "timezone": config.get("statistics", {}).get("timezone", "Asia/Kolkata"),
+        },
+    )
     github.setdefault("languages", [])
     github.setdefault("activities", [])
     verified = {

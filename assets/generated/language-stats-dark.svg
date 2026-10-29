@@ -1,0 +1,32 @@
+<svg width="350" height="200" viewBox="0 0 350 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Public repository language distribution</title>
+  <desc id="desc">Language percentages derived from GitHub Linguist byte totals across eligible public repositories.</desc>
+  <rect x="0.5" y="0.5" width="349" height="199" rx="12" fill="#0B1220" stroke="#24324A"/>
+  <style>text{font-family:'Segoe UI',Inter,Arial,sans-serif}.label{font-size:13px;fill:#94A3B8}.value{font-size:20px;font-weight:700;fill:#E2E8F0}.heading{font-size:17px;font-weight:700;fill:#60A5FA}.foot{font-size:11px;fill:#94A3B8}</style>
+  <text class="heading" x="24" y="32">Public Repository Languages</text>
+  <text class="label" x="24" y="58">JavaScript</text>
+  <text class="label" x="326" y="58" text-anchor="end">34.0%</text>
+  <rect x="24" y="64" width="250" height="5" rx="2.5" fill="#1E293B"/>
+  <rect x="24" y="64" width="85.0" height="5" rx="2.5" fill="#60A5FA"/>
+  <text class="label" x="24" y="81">HTML</text>
+  <text class="label" x="326" y="81" text-anchor="end">29.6%</text>
+  <rect x="24" y="87" width="250" height="5" rx="2.5" fill="#1E293B"/>
+  <rect x="24" y="87" width="74.0" height="5" rx="2.5" fill="#22D3EE"/>
+  <text class="label" x="24" y="104">Python</text>
+  <text class="label" x="326" y="104" text-anchor="end">19.8%</text>
+  <rect x="24" y="110" width="250" height="5" rx="2.5" fill="#1E293B"/>
+  <rect x="24" y="110" width="49.5" height="5" rx="2.5" fill="#A78BFA"/>
+  <text class="label" x="24" y="127">CSS</text>
+  <text class="label" x="326" y="127" text-anchor="end">14.7%</text>
+  <rect x="24" y="133" width="250" height="5" rx="2.5" fill="#1E293B"/>
+  <rect x="24" y="133" width="36.8" height="5" rx="2.5" fill="#34D399"/>
+  <text class="label" x="24" y="150">TypeScript</text>
+  <text class="label" x="326" y="150" text-anchor="end">1.9%</text>
+  <rect x="24" y="156" width="250" height="5" rx="2.5" fill="#1E293B"/>
+  <rect x="24" y="156" width="4.8" height="5" rx="2.5" fill="#F59E0B"/>
+  <text class="label" x="24" y="173">PowerShell</text>
+  <text class="label" x="326" y="173" text-anchor="end">0.1%</text>
+  <rect x="24" y="179" width="250" height="5" rx="2.5" fill="#1E293B"/>
+  <rect x="24" y="179" width="0.2" height="5" rx="2.5" fill="#F472B6"/>
+  <text class="foot" x="24" y="190">Eligible public repositories · GitHub Linguist bytes</text>
+</svg>

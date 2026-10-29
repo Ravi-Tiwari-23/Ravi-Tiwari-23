@@ -162,20 +162,37 @@ def test_graphql_contribution_totals_are_collected(config):
     class TokenClient(FakeClient):
         token = "mock-token"
 
-        def graphql(self, _query, _variables):
+        def __init__(self):
+            super().__init__()
+            self.variables = None
+
+        def graphql(self, _query, variables):
+            self.variables = variables
             return {
                 "user": {
                     "contributionsCollection": {
                         "totalCommitContributions": 12,
                         "totalPullRequestContributions": 3,
+                        "totalIssueContributions": 2,
+                        "totalPullRequestReviewContributions": 4,
+                        "restrictedContributionsCount": 5,
+                        "contributionCalendar": {
+                            "totalContributions": 1,
+                            "weeks": [{"contributionDays": []}],
+                        },
                     },
                     "pullRequests": {"nodes": []},
                 }
             }
 
-    result = collect_profile_data(TokenClient(), config)
+    client = TokenClient()
+    result = collect_profile_data(client, config)
     assert result["stats"]["public_commit_contributions"] == 12
     assert result["stats"]["public_pull_request_contributions"] == 3
+    assert result["stats"]["restricted_contributions"] == 5
+    assert result["reporting_period"]["days"] == 365
+    assert client.variables["login"] == "Ravi-Tiwari-23"
+    assert client.variables["from"] < client.variables["to"]
 
 
 class FakeResponse:

@@ -50,6 +50,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/fetch_github.py
 
+      - name: Generate repository-owned statistics cards
+        run: python scripts/generate_stats.py
+
       - name: Generate README from template
         run: python scripts/generate_readme.py
 
@@ -59,12 +62,12 @@ jobs:
       - name: Commit only meaningful changes
         shell: bash
         run: |
-          if git diff --quiet -- README.md; then
-            echo "README.md is already current."
+          if git diff --quiet -- README.md assets/generated; then
+            echo "README and statistics cards are already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md
+          git add README.md assets/generated
           git commit -m "chore: refresh dynamic profile"
           git push origin HEAD:main
