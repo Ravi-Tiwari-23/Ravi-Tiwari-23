@@ -39,8 +39,8 @@ I have worked on campus printing workflows, property technology, CRM and email a
 
 <sub>Repository, star, and fork totals come from the public GitHub API. Star and fork totals exclude the profile repository, archived repositories, and forks.</sub>
 
-- **Eligible commit contributions (2025-11-05 to 2026-11-04):** 70
-- **Pull-request contributions (2025-11-05 to 2026-11-04):** 4
+- **Eligible commit contributions (2025-11-06 to 2026-11-05):** 70
+- **Pull-request contributions (2025-11-06 to 2026-11-05):** 4
 
 ## Technical Arsenal
 
@@ -183,7 +183,7 @@ Top 10 team at Cosmicathon, TIET Patiala, August 2026.
   </picture>
 </div>
 
-<sub>Repository and language data cover eligible public repositories. Contribution and streak values use the GitHub-visible contribution calendar for the rolling 365-day period ending 2026-11-04 in Asia/Kolkata. Eligible commit contributions follow GitHub's contribution rules; they are not an all-repository lifetime commit count.</sub>
+<sub>Repository and language data cover eligible public repositories. Contribution and streak values use the GitHub-visible contribution calendar for the rolling 365-day period ending 2026-11-05 in Asia/Kolkata. Eligible commit contributions follow GitHub's contribution rules; they are not an all-repository lifetime commit count.</sub>
 
 ## 🐍 My Contribution Journey
 
