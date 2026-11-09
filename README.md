@@ -39,8 +39,8 @@ I have worked on campus printing workflows, property technology, CRM and email a
 
 <sub>Repository, star, and fork totals come from the public GitHub API. Star and fork totals exclude the profile repository, archived repositories, and forks.</sub>
 
-- **Eligible commit contributions (2025-11-10 to 2026-11-09):** 70
-- **Pull-request contributions (2025-11-10 to 2026-11-09):** 4
+- **Eligible commit contributions (2025-11-11 to 2026-11-10):** 91
+- **Pull-request contributions (2025-11-11 to 2026-11-10):** 4
 
 ## Technical Arsenal
 
@@ -70,11 +70,11 @@ I use the tools that fit the product and problem; this curated list reflects tec
 
 | Language | Share of detected repository code |
 |---|---:|
-| JavaScript | 34.0% |
-| HTML | 29.6% |
-| Python | 19.8% |
+| JavaScript | 30.7% |
+| HTML | 29.4% |
+| Python | 22.9% |
 | CSS | 14.7% |
-| TypeScript | 1.9% |
+| TypeScript | 2.2% |
 | PowerShell | 0.1% |
 
 <sub>GitHub language usage describes repository composition, not proficiency or mastery.</sub>
@@ -116,7 +116,7 @@ I use the tools that fit the product and problem; this curated list reflects tec
 
 **Stack:** `Django` `Python` `Bootstrap` `SQLite` `Pillow`
 <br />
-**GitHub metadata:** Python · ★ 0 · Forks 1 · Last activity 12 Oct 2026 · **Curated status:** Active development
+**GitHub metadata:** Python · ★ 0 · Forks 1 · Last activity 09 Nov 2026 · **Curated status:** Active development
 <br />
 [Repository](https://github.com/Ravi-Tiwari-23/ZaraTech-blog_page)
 
@@ -183,7 +183,7 @@ Top 10 team at Cosmicathon, TIET Patiala, August 2026.
   </picture>
 </div>
 
-<sub>Repository and language data cover eligible public repositories. Contribution and streak values use the GitHub-visible contribution calendar for the rolling 365-day period ending 2026-11-09 in Asia/Kolkata. Eligible commit contributions follow GitHub's contribution rules; they are not an all-repository lifetime commit count.</sub>
+<sub>Repository and language data cover eligible public repositories. Contribution and streak values use the GitHub-visible contribution calendar for the rolling 365-day period ending 2026-11-10 in Asia/Kolkata. Eligible commit contributions follow GitHub's contribution rules; they are not an all-repository lifetime commit count.</sub>
 
 ## 🐍 My Contribution Journey
 
