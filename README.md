@@ -134,6 +134,7 @@ I use the tools that fit the product and problem; this curated list reflects tec
 
 ## Recently on GitHub
 
+- **Pushed commits** — [0 public commits to ZaraTech-blog\_page](https://github.com/Ravi-Tiwari-23/ZaraTech-blog_page) · 09 Nov 2026
 - **Merged a pull request** — [correct the navbar and enchanced the navbar](https://github.com/PriyanshuDas0015/Your-Home/pull/5) · 19 Aug 2026
 - **Merged a pull request** — [Add Frontend/dist and update gitignore file](https://github.com/PriyanshuDas0015/Your-Home/pull/4) · 19 Aug 2026
 - **Merged a pull request** — [Add frontend application](https://github.com/PriyanshuDas0015/Your-Home/pull/3) · 19 Aug 2026
