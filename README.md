@@ -32,15 +32,15 @@ I have worked on campus printing workflows, property technology, CRM and email a
 ## GitHub Snapshot
 
 <div align="center">
-  <img alt="8 public repositories" src="https://img.shields.io/badge/Public_repositories-8-0B1220?style=for-the-badge&amp;labelColor=0B1220&amp;color=2563EB" />
+  <img alt="9 public repositories" src="https://img.shields.io/badge/Public_repositories-9-0B1220?style=for-the-badge&amp;labelColor=0B1220&amp;color=2563EB" />
   <img alt="1 stars across eligible repositories" src="https://img.shields.io/badge/Eligible_repo_stars-1-0B1220?style=for-the-badge&amp;labelColor=0B1220&amp;color=0891B2" />
   <img alt="3 forks across eligible repositories" src="https://img.shields.io/badge/Eligible_repo_forks-3-0B1220?style=for-the-badge&amp;labelColor=0B1220&amp;color=7C3AED" />
 </div>
 
 <sub>Repository, star, and fork totals come from the public GitHub API. Star and fork totals exclude the profile repository, archived repositories, and forks.</sub>
 
-- **Eligible commit contributions (2025-11-17 to 2026-11-16):** 91
-- **Pull-request contributions (2025-11-17 to 2026-11-16):** 4
+- **Eligible commit contributions (2025-11-18 to 2026-11-17):** 151
+- **Pull-request contributions (2025-11-18 to 2026-11-17):** 4
 
 ## Technical Arsenal
 
@@ -70,11 +70,11 @@ I use the tools that fit the product and problem; this curated list reflects tec
 
 | Language | Share of detected repository code |
 |---|---:|
-| JavaScript | 30.7% |
-| HTML | 29.4% |
-| Python | 22.9% |
+| JavaScript | 32.8% |
+| HTML | 28.3% |
+| Python | 22.0% |
 | CSS | 14.7% |
-| TypeScript | 2.2% |
+| TypeScript | 2.1% |
 | PowerShell | 0.1% |
 
 <sub>GitHub language usage describes repository composition, not proficiency or mastery.</sub>
@@ -184,7 +184,7 @@ Top 10 team at Cosmicathon, TIET Patiala, August 2026.
   </picture>
 </div>
 
-<sub>Repository and language data cover eligible public repositories. Contribution and streak values use the GitHub-visible contribution calendar for the rolling 365-day period ending 2026-11-16 in Asia/Kolkata. Eligible commit contributions follow GitHub's contribution rules; they are not an all-repository lifetime commit count.</sub>
+<sub>Repository and language data cover eligible public repositories. Contribution and streak values use the GitHub-visible contribution calendar for the rolling 365-day period ending 2026-11-17 in Asia/Kolkata. Eligible commit contributions follow GitHub's contribution rules; they are not an all-repository lifetime commit count.</sub>
 
 ## 🐍 My Contribution Journey
 
